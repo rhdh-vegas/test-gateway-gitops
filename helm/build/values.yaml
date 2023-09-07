@@ -1,0 +1,15 @@
+app:
+  name: test-poi-gateway-app
+  namespace: test
+  cluster: .apps.rosa-bvg5j.wov7.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-vegas/test-gateway
+  org: rhdh-vegas
+  name: test-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: test/poi-gateway-app
+  tag: latest
